@@ -1,0 +1,8 @@
+ollama
+jsonlines
+requests
+scikit-learn
+torch
+transformers
+bitsandbytes
+
