@@ -15,7 +15,7 @@ current_models = {
 def main():
     parser = argparse.ArgumentParser(description='Run Code Clone Detection')
     parser.add_argument('--model_class', type=str, required=True, choices=['offline', 'ollama'], help='The model class to use')
-    parser.add_argument('--data_file', type=str, default='ruby_java_test_clone3.jsonl', help='The data file containing code samples')
+    parser.add_argument('--data_file', type=str, default='java_test_clone3.jsonl', help='The data file containing code samples')
     parser.add_argument('--result_dir', type=str, default='model_result', help='The location to save the results')
     parser.add_argument('--model', type=str, default='phi3', help='The model to use')
 
