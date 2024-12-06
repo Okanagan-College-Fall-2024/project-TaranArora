@@ -27,6 +27,8 @@ def main():
         model = current_models[args.model]
     elif args.model_class == 'ollama':
         model_cls = OllamaInference
+        print(f"Model class: {model_cls}, Model: {model}")
+
     else:
         raise ValueError(f"Unknown model class: {args.model_class}")
     

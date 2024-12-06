@@ -179,15 +179,15 @@ class Analyser:
 
 if __name__ == '__main__':
     analyser = Analyser(
-        os.path.join(current_location, 'java_test_clone_2.jsonl'),
-        os.path.join(current_location, 'results', 'results_for_java2.txt')
+        os.path.join(current_location, 'java_test_clone_3.jsonl'),
+        os.path.join(current_location, 'model_results', 'results_for_java3.txt')
     )
     analyser.compute_metrics()
     analyser.compute_missing_samples(type='java_java')
     
     analyser2 = Analyser(
-        os.path.join(current_location, 'ruby_java_test_clone2.jsonl'),
-        os.path.join(current_location, 'results', 'results_for_java_ruby2.txt')
+        os.path.join(current_location, 'ruby_java_test_clone3.jsonl'),
+        os.path.join(current_location, 'model_results', 'results_for_java_ruby3.txt')
     )
     analyser2.compute_metrics()
     analyser2.compute_missing_samples(type='java_ruby')
