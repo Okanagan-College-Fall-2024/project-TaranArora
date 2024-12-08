@@ -1,0 +1,5 @@
+Calculating the scores for phi3-mini
+
+F1 score: 0.4358974358974359
+Precision: 0.6710526315789473
+Recall: 0.3227848101265823
