@@ -1,0 +1,5 @@
+Calculating the scores for llama-3.2 model
+
+F1 score: 0.10936416376583398
+Precision: 0.66936376538871098
+Recall: 0.20636363636363636

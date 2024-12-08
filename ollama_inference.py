@@ -2,23 +2,17 @@ import os
 import json
 import pathlib
 from abc import ABC, abstractmethod
-
-
 import requests
-
 from analyse import Analyser
 from model_inference import ModelInterface
-
-
 current_location = pathlib.Path(__file__).parent.resolve()
 
 
 class OllamaInference(ModelInterface):
-    def __init__(self,  model='phi3', stream=False):
+    def __init__(self,  model='llama3.2', stream=False):
         self.model = model
         self.stream = stream
         self.results = []
-
     def _send_request(self, prompt_id, prompt):
         url = "http://localhost:11434/api/generate"
         headers = {
@@ -45,9 +39,6 @@ class OllamaInference(ModelInterface):
         {nl_instruction}
         """
         return (id, prompt)
-
-
-
 # if __name__ == "__main__":
 #     ollama_request = CodeCloneDetection(
 #         data_file=os.path.join(current_location, 'ruby_java_test_clone3.jsonl'),

@@ -9,18 +9,18 @@ For this experiment, we have employed the ollama phi3-mini model. The data that 
   
 | F1 score | Precision | Recall |
 |:----------:|:----------:|:----------:|
-| 0.51 | 0.70 | 0.40 |
+| 0.43 | 0.67 | 0.32 |
 
 
-**results for phi3-Mini using HuggingFace**
+**results for orca-Mini using Ollama**
   
 | F1 score | Precision | Recall |
 |:----------:|:----------:|:----------:|
-| 0.47 | 0.54 | 0.42 |
+| 0.60 | 0.49 | 0.70 |
 
 
-**results for phi3-Medium using HuggingFaxce**
+**results for llama-3.2 using Ollama**
   
 | F1 score | Precision | Recall |
 |:----------:|:----------:|:----------:|
-| 0.72 | 0.66 | 0.80 |
+| 0.1 | 0.66 | 0.20 |
